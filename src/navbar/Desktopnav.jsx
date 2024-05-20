@@ -17,7 +17,7 @@ const Navbar = () => {
     <section>
       {/* Top Nav*/}
       
-      <div className="bg-gray-100 w-full fixed top-0 left-0 z-50 h-40 flex items-center">
+      <div className="bg-gray-100 w-full fixed top-0 left-0 h-40 flex items-center z-50">
         <div className="flex flex-col md:flex-row w-full max-w-5xl mx-auto justify-between items-center p-2">
           {/* Business Hours and Location */}
           <div className='sm:flex flex-col text-l hidden text-black'>
