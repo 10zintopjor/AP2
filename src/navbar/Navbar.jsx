@@ -3,18 +3,17 @@ import React from 'react';
 import DesktopNav from './Desktopnav';
 import MobileNav from './Mobilenav';
 
-const Navbar = () => {
+const NavBar = () => {
   return (
     <nav>
-        {/* Desktop Navigation */}
-          <section className='hidden sm:flex flex-row gap-10 text-xl text-white bg-customBlue w-full justify-center'>
+          <div className='hidden sm:block'>
           <DesktopNav />
-          </section>
-          <section className='sm:hidden'>
+          </div>     
+          <div className='sm:hidden'>
           <MobileNav />
-          </section>
+          </div>
     </nav>
   );
 }
 
-export default Navbar;
+export default NavBar;

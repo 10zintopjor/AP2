@@ -55,6 +55,12 @@ export const links = [
       sublinks: [],
     },
 
+    {
+      name: "Services",
+      link: "/services",
+      submenu: false,
+      sublinks: [],
+    },
     
     {
       name: "About Us",

@@ -6,7 +6,7 @@ import BusinessCard from './BusinessCard';
 function Footer() {
   return (
     <>
-      <hr className="border-b-2 sm:mx-20 border-black" />
+      <hr className="border-b-2 border-black" />
 
       <div className='grid grid-cols-1 sm:grid-cols-3 ml-4 sm:mx-40 m-5 gap-6'>
         <div className='flex flex-col'>
@@ -54,7 +54,7 @@ function Footer() {
       </div>
       
 
-      <hr className="border-b-2 border-black sm:mx-20" />
+      <hr className="border-b-2 border-black" />
       <div className="flex flex-col sm:flex-row sm:justify-between mx-4 sm:mx-40 sm:my-2 my-4">
         <p className="text-center sm:text-left">© 2024 Plumbing Company. All rights reserved.</p>
         <div className="flex flex-col sm:flex-row sm:gap-10 gap-4 mt-4 sm:mt-0">

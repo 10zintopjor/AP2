@@ -1,23 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { CiClock2 } from "react-icons/ci";
 import { GoLocation } from "react-icons/go";
 import { IoCallOutline } from "react-icons/io5";
 import { links } from './Mylinks';
 import logo from "../images/logo.png";
-import { Link } from 'react-router-dom';
 
-const Navbar = () => {
-  const [activeMenu, setActiveMenu] = useState('');
-
-  const toggleMenu = (menuName) => {
-    setActiveMenu(activeMenu === menuName ? '' : menuName);
-  };
-
+const DesktopNav = () => {
   return (
-    <section>
+    <div>
       {/* Top Nav*/}
-      
-      <div className="bg-gray-100 w-full fixed top-0 left-0 h-40 flex items-center z-50">
+      <div className="bg-gray-100 w-full top-0 left-0 h-40 flex items-center z-50">
         <div className="flex flex-col md:flex-row w-full max-w-5xl mx-auto justify-between items-center p-2">
           {/* Business Hours and Location */}
           <div className='sm:flex flex-col text-l hidden text-black'>
@@ -39,7 +32,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-
+          
           {/* Logo */}
           <div className="px-2 py-2">
             <img src={logo} alt="logo" className="h-24 md:cursor-pointer" />
@@ -59,42 +52,21 @@ const Navbar = () => {
       </div>
 
       {/* Desktop navigation */}
-      <nav className="bg-customBlue w-full mt-40">
-        <div className="max-w-5xl mx-auto flex flex-row gap-10 py-4">
+      <nav className="relative bg-customBlue w-full">
+        <div className="max-w-5xl mx-auto flex flex-row gap-20 py-4 justify-center text-white">
           {links.map((link) => (
             <div key={link.name} className="relative">
               <div className="text-left cursor-pointer group">
-                <h1
-                  className="flex justify-between items-center hover:text-gray-400"
-                  onClick={() => toggleMenu(link.name)}
-                >
+                <Link to={link.link} className="hover:text-gray-400 text-xl">
                   {link.name}
-                  <span className="text-xl md:block hidden group-hover:rotate-180 group-hover:-mt-2">
-                    <ion-icon name="chevron-down"></ion-icon>
-                  </span>
-                </h1>
-                {activeMenu === link.name && link.submenu && (
-                  <div className="absolute top-full left-0 w-full bg-white shadow-md mt-2">
-                    <div className="p-5 grid grid-cols-2 gap-4">
-                      {link.sublinks.map((sublink) => (
-                        <div key={sublink.name} className="w-full">
-                          <li className="text-gray-600 transition duration-300 ease-in-out hover:text-gray-400">
-                            <Link to={sublink.link} className="text-base leading-normal">
-                              {sublink.name}
-                            </Link>
-                          </li>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                )}
+                </Link>
               </div>
             </div>
           ))}
         </div>
       </nav>
-    </section>
+    </div>
   );
 };
 
-export default Navbar;
+export default DesktopNav;

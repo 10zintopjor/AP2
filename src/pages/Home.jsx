@@ -5,18 +5,19 @@ import Testimonial from '../components/Testimonial'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Services2 from '../services/Services'
-import BusinessCard from '../components/BusinessCard'
+import NavBar from '../navbar/Navbar'
 
 function Home() {
   return (
-    <>
+    <div>
+    <NavBar />
     <Hero />
     <Services />
     <Services2 />
     <Testimonial />
     <Contact />
     <Footer />
-    </>
+    </div>
   )
 }
 
