@@ -13,7 +13,7 @@ const MobileNav = () => {
   };
 
   return (
-    <div className='mb-36'>
+    <div className='mb-36 sm:hidden'>
       {/* Top Nav */}
       <div className="bg-gray-100 w-full fixed top-0 left-0 z-50">
         <div className='flex flex-col'>

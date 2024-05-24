@@ -5,14 +5,10 @@ import MobileNav from './Mobilenav';
 
 const NavBar = () => {
   return (
-    <nav>
-          <div className='hidden sm:block'>
-          <DesktopNav />
-          </div>     
-          <div className='sm:hidden'>
-          <MobileNav />
-          </div>
-    </nav>
+    <>
+    <DesktopNav className=''/>
+    <MobileNav className='' />
+    </>
   );
 }
 
