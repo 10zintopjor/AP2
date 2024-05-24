@@ -6,7 +6,6 @@ import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 import Services2 from '../services/Services'
 import NavBar from '../navbar/Navbar'
-import DesktopNav from '../navbar/Desktopnav'
 
 function Home() {
   return (

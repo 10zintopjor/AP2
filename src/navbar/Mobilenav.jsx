@@ -13,9 +13,9 @@ const MobileNav = () => {
   };
 
   return (
-    <div className='mb-36 sm:hidden'>
+    <div className='sticky top-0 z-50 sm:hidden'>
       {/* Top Nav */}
-      <div className="bg-gray-100 w-full fixed top-0 left-0 z-50">
+      <div className="bg-gray-100 w-full">
         <div className='flex flex-col'>
           <div className="flex flex-row md:flex-row w-full max-w-5xl mx-auto justify-between items-center p-2">
             {/* Logo */}
