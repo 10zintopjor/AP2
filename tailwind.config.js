@@ -10,6 +10,9 @@ module.exports = {
         customGreen: 'rgb(0, 128, 0)',
         customRed: '#ff0000',
       },
+      fontFamily:{
+        'defaultFont':["Raleway", "sans-serif"],
+      },
     },
   },
   variants: {},
