@@ -58,8 +58,8 @@ const DesktopNav = () => {
         <div className="max-w-5xl mx-auto flex flex-row gap-20 py-0 justify-center text-white">
           {links.map((link) => (
             <div key={link.name} className="relative">
-              <div className="text-left cursor-pointer group">
-                <div className={`text-l py-1 px-4 flex items-center justify-center ${location.pathname === link.link ? "bg-red-700" : "hover:bg-red-700"} transition-all duration-300`}>
+              <div className="text-left cursor-pointer group text-bold">
+                <div className={`text-l py-1 px-4 flex items-center justify-center ${location.pathname === link.link ? "bg-red-700" : "hover:bg-red-700"} transition-all duration-300 `}>
                   <Link to={link.link} className={location.pathname === link.link ? "text-white" : ""}>
                     {link.name}
                   </Link>
