@@ -2,8 +2,8 @@ import React from 'react'
 
 function BusinessCard() {
   return (
-          <div className="p-4 bg-black rounded-lg text-white text-center">
-      <h2 className='text-2xl font-bold mb-2'>Aria Plumbing</h2>
+      <div className="sm:px-8 sm:py-2 px-0 bg-black rounded-lg text-white text-center">
+      <h2 className='text-2xl font-bold'>Aria Plumbing</h2>
       <div className="border-b-2 border-white w-22 mx-auto mb-2"></div>
       <h4 className="text-lg font-semibold mb-2">Your Family Plumber</h4>
       <p className="text-sm mb-2">Professional Plumbing & Drain Services</p>
