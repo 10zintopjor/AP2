@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from "../images/logo.png";
+import Logo from "../images/3.png";
 import { FaFacebook, FaInstagram, FaTiktok, FaTwitter } from "react-icons/fa";
 import BusinessCard from './BusinessCard';
 
@@ -10,7 +10,7 @@ function Footer() {
 
       <div className='grid grid-cols-1 sm:grid-cols-3 ml-4 sm:mx-40 m-5 gap-6'>
         <div className='flex flex-col'>
-          <img className="p-4" src={Logo} alt="logo" style={{ width: '180px', height: 'auto' }} />
+          <img className="p-4" src={Logo} alt="logo" style={{ width: '300px', height: 'auto' }} />
           <div className='p-4'>
             <h3>Address</h3>
             <span>Level1, 123 Main St, Toronto, ON</span>

@@ -8,7 +8,7 @@ import { GiAutoRepair } from "react-icons/gi";
 function Services() {
   return (
     <div className='flex flex-col items-center'>
-        <h1 className='text-5xl font-bold text-center'>Professional Plumbing Services in Greater Toronto Area</h1>
+        <h1 className='text-5xl font-semibold text-center'>Professional Plumbing Services in Greater Toronto Area</h1>
         <div className='flex flex-col sm:flex-row m-10 justify-center w-3/4 gap-10'>
             <div className='flex flex-col items-center text-center'>
                 <div className='text-4xl'>

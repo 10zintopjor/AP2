@@ -15,9 +15,10 @@ function Contact() {
                 <h1 className='text-3xl sm:text-5xl text-left p-2 sm:p-4'>Expert Plumbing Services in Toronto</h1>
                 <h3 className='text-base sm:text-xl p-2 sm:p-4'>Trust our experienced plumbers for all your residential and commercial plumbing needs</h3>
                 <div className='flex flex-col sm:flex-row justify-center sm:justify-start p-2 sm:p-4 gap-4 sm:gap-10'>
-                  <button className='bg-black text-white rounded text-base sm:text-3xl p-3 sm:p-5'>Schedule</button>
-                  <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white'>Learn More</button>
+                  <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Schedule</button>
+                  <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Learn More</button>
                 </div>
+
               </div>
             </div>
           </div>
@@ -27,7 +28,7 @@ function Contact() {
       <div className='ml-4 sm:ml-20 p-6 sm:p-20'>
         <h1 className='text-3xl sm:text-5xl text-left'>Contact Information</h1>
         <h3 className='text-base sm:text-xl text-left mt-4'>We're here to help with all your plumbing needs.</h3>
-        <div className='grid grid-cols-1 sm:grid-cols-3 m-8 gap-4'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 sm:m-8 m-2 gap-4'>
           <div className='flex flex-col bg-white rounded-lg p-4'>
             <div className='mb-2 sm:mb-4 text-xl sm:text-3xl'><MdEmail /></div>
             <h3 className='text-base sm:text-lg'>Email</h3>
