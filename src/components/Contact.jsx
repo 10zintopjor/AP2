@@ -9,20 +9,39 @@ function Contact() {
     <>
       <div className='relative'>
         <div className='w-full bg-customBlue text-white py-8 sm:py-10'>
-          <div className='flex flex-col w-full my-4 sm:my-10'>
-            <div className='sm:ml-40 sm:mr-40 md:ml-auto md:mr-auto'>
-              <div className='flex flex-col'>
-                <h1 className='text-3xl sm:text-5xl text-center sm:text-left p-2 sm:p-4'>Expert Plumbing Services in Toronto</h1>
-                <h3 className='text-base sm:text-xl text-center sm:text-left p-2 sm:p-4'>Trust our experienced plumbers for all your residential and commercial plumbing needs</h3>
-                <div className='flex flex-col sm:flex-row justify-center sm:justify-start p-2 sm:p-4 gap-4 sm:gap-10'>
-                  <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Schedule</button>
-                  <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Learn More</button>
-                </div>
-              </div>
+          <div className='flex flex-col w-full sm:w-3/4 mx-auto'>
+            <h1 className='text-3xl sm:text-5xl text-center sm:text-left p-2 sm:p-4'>Expert Plumbing Services in Toronto</h1>
+            <h3 className='text-base sm:text-xl text-center sm:text-left p-2 sm:p-4'>Trust our experienced plumbers for all your residential and commercial plumbing needs</h3>
+            <div className='flex flex-col sm:flex-row justify-center sm:justify-start p-2 sm:p-4 gap-4 sm:gap-10'>
+              <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Schedule</button>
+              <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Learn More</button>
             </div>
           </div>
         </div>
       </div>
+
+
+      {/* Second Component */}
+      <div className='flex flex-col sm:flex-row justify-center items-center mt-10 w-full p-4'>
+        <div className='flex flex-col w-full sm:w-3/4'>
+          <p>Reliable</p>
+          <h2 className='text-3xl sm:text-5xl font-semibold mt-5'>
+            Fast and Efficient Plumbing Services in Toronto
+          </h2>
+          <p className='mt-5'>
+            We provide emergency plumbing services 24/7. Our team of experienced plumbers is always ready to tackle any plumbing issue, ensuring prompt and reliable solutions for both residential and commercial properties in the Greater Toronto Area.
+          </p>
+          <div className='flex flex-col sm:flex-row mt-10 gap-4 sm:gap-0'>
+            <button className="px-8 py-4 text-xl rounded-lg border border-black bg-transparent text-black hover:bg-gray-400 hover:text-white transition sm:mr-5">
+              Learn More
+            </button>
+            <button className="px-8 py-4 text-xl rounded-lg border border-black bg-transparent text-black hover:bg-gray-400 hover:text-white transition">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </div>
+
 
       <div className='ml-4 sm:ml-20 md:ml-0 p-6 sm:p-20'>
   <h1 className='text-3xl sm:text-5xl text-left'>Contact Information</h1>

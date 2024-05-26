@@ -40,7 +40,7 @@ function Testimonial() {
 
   return (
     <div className='flex flex-col items-center w-full '>
-      <h1 className='text-5xl font-semibold m-10 text-center'>What Clients Are Saying About Us</h1>
+      <h1 className='text-5xl font-semibold my-10 text-center'>What Clients Are Saying About Us</h1>
       <div className='flex flex-col items-center bg-gray-100 border-gray-200'>
         <div className=' w-3/4 flex rounded justify-center flex-col items'>
           <div className="text-xl m-2 gap-2 flex flex-row items-center">

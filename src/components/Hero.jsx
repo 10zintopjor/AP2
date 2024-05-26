@@ -42,7 +42,7 @@ function Hero() {
           <h1 className="text-4xl sm:text-6xl font-bold">Reliable Plumbing Services in the GTA</h1>
           <h3 className="text-xl mt-8">We provide high-quality plumbing services for residential and commercial clients in the Greater Toronto Area</h3>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center justify-center mt-10">
-            <div className='flex flex-col sm:flex-row justify-center sm:justify-start p-2 sm:p-4 gap-4 sm:gap-10'>
+            <div className='flex flex-row justify-center sm:justify-start p-2 sm:p-4 gap-4 sm:gap-10'>
                   <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Schedule</button>
                   <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Learn More</button>
                 </div>
