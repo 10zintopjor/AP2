@@ -6,12 +6,15 @@ import ResidentialServices from './pages/ResidentialServices';
 import CommercialServices from './pages/CommercialServices';
 import AboutUs from './pages/AboutUs';
 import Reviews from './pages/Reviews';
-
-
+import ScrollToTop from './components/ScrollToTop';
+import NavBar from './navbar/Navbar';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
+      <NavBar />
       <Routes>
         <Route path="/services" element={<Services />} />
         <Route path="/residentialservices" element={<ResidentialServices />} />
@@ -20,6 +23,7 @@ function App() {
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/" element={<Home />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

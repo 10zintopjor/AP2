@@ -1,11 +1,8 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import NavBar from '../navbar/Navbar';
 
 function Reviews() {
   return (
     <>
-      <NavBar />
       <div className='w-full md:w-3/4 mx-auto p-6 sm:p-20'>
         <h1 className='text-3xl sm:text-5xl text-left'>Customer Reviews</h1>
         <h3 className='text-base sm:text-xl text-left mt-4'>See what our customers are saying about us.</h3>
@@ -28,7 +25,6 @@ function Reviews() {
           {/* Add more reviews as needed */}
         </div>
       </div>
-      <Footer />
     </>
   );
 }

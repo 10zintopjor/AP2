@@ -1,11 +1,8 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import NavBar from '../navbar/Navbar';
 
 function AboutUs() {
   return (
     <>
-      <NavBar />
       <div className='w-full md:w-3/4 mx-auto p-6 sm:p-20'>
         <h1 className='text-3xl sm:text-5xl text-left'>About Us</h1>
         <h3 className='text-base sm:text-xl text-left mt-4'>Learn more about our company and team.</h3>
@@ -41,7 +38,6 @@ function AboutUs() {
           <strong>Address:</strong> 123 Main St, Toronto, ON M1M 1M1
         </p>
       </div>
-      <Footer />
     </>
   );
 }

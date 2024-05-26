@@ -10,14 +10,11 @@ import NavBar from '../navbar/Navbar'
 function Home() {
   return (
     <>
-    <NavBar />
     <Hero />
     <Services2 />
-
     <Services />
     <Testimonial />
     <Contact />
-    <Footer />
     </>
   )
 }

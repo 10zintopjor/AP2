@@ -1,6 +1,4 @@
 import React from 'react';
-import NavBar from '../navbar/Navbar';
-import Footer from '../components/Footer';
 import ServiceCard from '../components/ServiceCard';
 import tapImg from '../images/services/tap.png';
 import faucetImg from '../images/services/faucet.png';
@@ -78,7 +76,6 @@ const services = [
 function Services() {
   return (
     <>
-      <NavBar />
       <div className="min-h-screen bg-gray-100 py-6">
         <div className="max-w-6xl mx-auto px-4 mt-16 sm:mt-8">
           <h1 className="text-5xl font-bold text-center mb-8">Our Plumbing Services</h1>
@@ -108,7 +105,6 @@ function Services() {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 }
