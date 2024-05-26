@@ -7,6 +7,7 @@ export const links = [
 
     {
       name: "Residential",
+      link: "/residentialservices",
       submenu: true,
       sublinks: [
         
@@ -51,6 +52,7 @@ export const links = [
     },
     {
       name: "Commercial",
+      link: "/commercialservices",
       submenu: false,
       sublinks: [],
     },
@@ -61,9 +63,16 @@ export const links = [
       submenu: false,
       sublinks: [],
     },
+    {
+      name: "Reviews",
+      link: "/reviews",
+      submenu: false,
+      sublinks: [],
+    },
     
     {
       name: "About Us",
+      link: "/aboutus",
       submenu: false,
       sublinks: [],
     },

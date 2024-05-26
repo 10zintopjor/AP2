@@ -12,8 +12,9 @@ function Home() {
     <>
     <NavBar />
     <Hero />
-    <Services />
     <Services2 />
+
+    <Services />
     <Testimonial />
     <Contact />
     <Footer />
