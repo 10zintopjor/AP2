@@ -1,8 +1,16 @@
 import { FaStar } from "react-icons/fa";
 import * as React from 'react';
 import { FcGoogle } from "react-icons/fc";
-import ReviewCard from "./ReviewCard";
+import { Link } from 'react-router-dom'; // Assuming you're using React Router for navigation
 
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
 
 function Testimonial() {
   const testimonials = [
@@ -31,48 +39,39 @@ function Testimonial() {
   const googleReviews = 150; // Number of Google reviews
 
   return (
-    <>
-      <div className='mb-20 flex flex-col items-center'>
-        <h1 className='text-5xl font-semibold m-10 text-center'>What Clients Are Saying About Us</h1>
-        <div className='flex flex-col items-center'>
-          <div className='bg-gray-100 border-gray-200 w-full flex rounded justify-center flex-col items'>
-            <div className="text-xl m-2 gap-2 flex flex-row items-center px-4 mx-6">
-              <FcGoogle className="text-3xl"/> 
-              <p className="text-xs"> Google 4.7</p>
-            </div>
-            <hr></hr>
-            <div className="grid grid-cols-2 gap-4 mx-6">
-              <div className="text-2xl flex flex-col p-4">
-                <FcGoogle className="text-3xl" />
+    <div className='flex flex-col items-center w-full '>
+      <h1 className='text-5xl font-semibold m-10 text-center'>What Clients Are Saying About Us</h1>
+      <div className='flex flex-col items-center bg-gray-100 border-gray-200'>
+        <div className=' w-3/4 flex rounded justify-center flex-col items'>
+          <div className="text-xl m-2 gap-2 flex flex-row items-center">
+            <FcGoogle className="text-3xl"/> 
+            <p className="text-xs"> Google 4.7</p>
+          </div>
+          <hr></hr>
+          <div className="grid md:grid-cols-2 gap-10 py-4 mb-6">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="text-xl flex flex-col">
                 <div className="flex items-center gap-2">
                   <p className="text-s">4.7</p>
                   <FaStar />
                   <FaStar />
                   <FaStar />
                   <FaStar />
-
                 </div>
-                <div className="text-gray-500 text-sm">
-                  <p>150 reviews</p>
+                <div className="text-gray-500 text-sm flex items-center my-3">
+                  <div className="rounded-full w-8 h-8 flex items-center justify-center mr-2" style={{ backgroundColor: getRandomColor() }}>
+                    <span className="text-white">{testimonial.name.charAt(0).toUpperCase()}</span>
+                  </div>
+                  <div>{testimonial.name}</div>
                 </div>
+                <div>{testimonial.feedback}</div>
               </div>
-              <div className="flex items-center justify-end pr-4">
-                <button className="bg-indigo-800 hover:bg-indigo-600 text-white font-bold py-2 px-8 rounde mx-10">Write a Review</button>
-              </div>
-            </div>
-          </div>
-          <div className='flex flex-col md:flex-row justify-center items-center mt-10 gap-10 px-1 py-2'>
-            {testimonials.map((testimonial, index) => (
-              <ReviewCard 
-              name={testimonial.name}
-              review={testimonial.feedback}
-              rating={testimonial.rating}
-              />
             ))}
           </div>
+          <Link to="/reviews" className="text-blue-600 cursor-pointer mt-2 mb-6">View More</Link>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

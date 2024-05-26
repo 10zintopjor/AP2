@@ -37,7 +37,7 @@ const DesktopNav = () => {
           <div className="flex flex-row md:items-start gap-10">
             <button className="bg-red-700 text-white py-2 px-2  flex flex-row items-center gap-2 rounded border border-gray-400 hover:bg-white hover:text-red-700">
               <IoCallOutline />
-              <p className=''>437-662-7338</p>
+              <p className='font-sans'>437-662-7338</p>
             </button>
             <button className="bg-transparent text-white py-2 px-2 rounded border border-white hover:bg-white hover:text-customBlue">
               <p className="">Book Your Appointment</p>
