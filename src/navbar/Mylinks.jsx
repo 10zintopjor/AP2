@@ -71,8 +71,8 @@ export const links = [
     },
     
     {
-      name: "About Us",
-      link: "/aboutus",
+      name: "About",
+      link: "/about",
       submenu: false,
       sublinks: [],
     },

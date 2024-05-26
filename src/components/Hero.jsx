@@ -35,20 +35,33 @@ function Hero() {
 
 
   return (
-    <div className='items-center'>
-         <div className="relative flex flex-col items-center justify-center bg-cover bg-center bg-no-repeat text-white h-max" style={{ backgroundImage: `url(${hero_img})`}}>
-        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay */}
-        <div className="z-10 sm:p-40 p-10 text-center max-w-4xl">
-          <h1 className="text-4xl sm:text-6xl font-bold">Reliable Plumbing Services in the GTA</h1>
-          <h3 className="text-xl mt-8">We provide high-quality plumbing services for residential and commercial clients in the Greater Toronto Area</h3>
-          <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 items-center justify-center mt-10">
-            <div className='flex flex-row justify-center sm:justify-start p-2 sm:p-4 gap-4 sm:gap-10'>
-                  <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Schedule</button>
-                  <button className='bg-transparent text-white text-base sm:text-3xl p-3 sm:p-5 border border-white hover:bg-white hover:text-customBlue transition duration-300'>Learn More</button>
-                </div>
-          </div>
+    <div className='items-start'>
+      <div className="relative flex flex-col lg:flex-row items-center justify-center bg-cover bg-center bg-no-repeat text-white h-max" style={{ backgroundImage: `url(${hero_img})` }}>
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      {/* Proudly Plumbing section */}
+      <div className="z-10 p-10 lg:p-40 text-center max-w-4xl">
+        <h1 className="text-4xl lg:text-6xl font-bold">Proudly Plumbing</h1>
+        <h3 className="text-xl mt-8">We provide high-quality plumbing services for residential and commercial clients in the Greater Toronto Area</h3>
+        {/* Buttons */}
+        <div className="mt-8">
+          <button className="bg-transparent text-white text-lg sm:text-2xl py-3 px-6 border border-white rounded-lg mr-4 hover:bg-white hover:text-customBlue transition duration-300">Schedule</button>
+          <button className="bg-transparent text-white text-lg sm:text-2xl py-3 px-6 border border-white rounded-lg hover:bg-white hover:text-customBlue transition duration-300">Learn More</button>
         </div>
       </div>
+      {/* Form section */}
+      <div className="z-10 p-4 lg:p-20 text-center max-w-4xl bg-gray-900 bg-opacity-75 border border-white">
+        <h2 className="text-3xl font-bold text-white mb-4">Contact Us</h2>
+        {/* Form fields */}
+        <form className="flex flex-col space-y-4">
+          <input type="text" placeholder="Your Name" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none" />
+          <input type="tel" placeholder="Phone Number" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none" />
+          <input type="text" placeholder="Location" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none" />
+          <textarea placeholder="Describe your issue..." rows="4" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none"></textarea>
+          <button type="submit" className="bg-customBlue text-white py-3 px-6 rounded-lg hover:bg-white hover:text-customBlue transition duration-300">Submit</button>
+        </form>
+      </div>
+    </div>
 
 
    <div className='flex sm:flex-row flex-col bg-customBlue sm:h-36 min-h-10 border-solid-gray-100 text-white items-center justify-center'>

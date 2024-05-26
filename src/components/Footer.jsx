@@ -8,7 +8,7 @@ function Footer() {
     <div>
       <hr className="border-b-2 border-black w-full" />
 
-      <div className='w-full sm:w-3/4 mx-auto mt-8'>
+      <div className='w-full sm:w-3/4 mx-auto mt-4'>
         <div className='grid grid-cols-1 md:grid-cols-3 mx-2'>
           <div className='flex flex-col items-center md:items-start justify-center'>
             <img className="p-4" src={Logo} alt="logo" style={{ width: '300px', height: 'auto' }} />

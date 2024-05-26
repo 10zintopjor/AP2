@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Services from './pages/Services';
 import ResidentialServices from './pages/ResidentialServices';
 import CommercialServices from './pages/CommercialServices';
-import AboutUs from './pages/AboutUs';
+import About from './pages/About';
 import Reviews from './pages/Reviews';
 import ScrollToTop from './components/ScrollToTop';
 import NavBar from './navbar/Navbar';
@@ -19,7 +19,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/residentialservices" element={<ResidentialServices />} />
         <Route path="/commercialservices" element={<CommercialServices />} />
-        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/about" element={<About />} />
         <Route path="/reviews" element={<Reviews />} />
         <Route path="/" element={<Home />} />
       </Routes>
