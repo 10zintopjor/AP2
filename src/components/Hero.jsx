@@ -50,15 +50,15 @@ function Hero() {
         </div>
       </div>
       {/* Form section */}
-      <div className="z-10 p-4 lg:p-20 text-center max-w-4xl bg-gray-900 bg-opacity-75 border border-white">
-        <h2 className="text-3xl font-bold text-white mb-4">Contact Us</h2>
+      <div className="z-10 lg:p-10 rounded  text-center max-w-4xl bg-gray-500 bg-opacity-75 border border-white">
+        <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
         {/* Form fields */}
-        <form className="flex flex-col space-y-4">
-          <input type="text" placeholder="Your Name" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none" />
-          <input type="tel" placeholder="Phone Number" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none" />
-          <input type="text" placeholder="Location" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none" />
-          <textarea placeholder="Describe your issue..." rows="4" className="bg-gray-800 text-white rounded-lg py-3 px-4 focus:outline-none"></textarea>
-          <button type="submit" className="bg-customBlue text-white py-3 px-6 rounded-lg hover:bg-white hover:text-customBlue transition duration-300">Submit</button>
+        <form className="flex flex-col space-y-4 ">
+          <input type="text" placeholder="Your Name" className="rounded-lg py-3 px-4 focus:outline-none" />
+          <input type="tel" placeholder="Phone Number" className="rounded-lg py-3 px-4 focus:outline-none" />
+          <input type="text" placeholder="Location" className="rounded-lg py-3 px-4 focus:outline-none" />
+          <textarea placeholder="Describe your issue..." rows="4" className="rounded-lg py-3 px-4 focus:outline-none"></textarea>
+          <button type="submit" className="bg-customBlue py-3 px-6 rounded-lg hover:bg-white hover:text-customBlue transition duration-300">Submit</button>
         </form>
       </div>
     </div>
